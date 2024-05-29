@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ANAND/ML_Projects/MLFlow_HandsOn/pythonProject/mlruns/0/d0372349037a49c799b6bb8c3f54b6f4/artifacts
+end_time: 1716994562114
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d0372349037a49c799b6bb8c3f54b6f4
+run_name: agreeable-bug-430
+run_uuid: d0372349037a49c799b6bb8c3f54b6f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716994544761
+status: 3
+tags: []
+user_id: ANAND
