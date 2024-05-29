@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ANAND/ML_Projects/MLFlow_HandsOn/pythonProject/mlruns/0/d5ea997c831b45378a057e7d62e2548e/artifacts
+end_time: 1716995339061
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d5ea997c831b45378a057e7d62e2548e
+run_name: nervous-midge-996
+run_uuid: d5ea997c831b45378a057e7d62e2548e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716995326115
+status: 3
+tags: []
+user_id: ANAND

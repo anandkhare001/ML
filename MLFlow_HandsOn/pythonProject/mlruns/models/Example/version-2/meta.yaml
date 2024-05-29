@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1716994632767
+current_stage: None
+description: ''
+last_updated_timestamp: 1716994632767
+name: Example
+run_id: d0372349037a49c799b6bb8c3f54b6f4
+run_link: ''
+source: file:///C:/Users/ANAND/ML_Projects/MLFlow_HandsOn/pythonProject/mlruns/0/d0372349037a49c799b6bb8c3f54b6f4/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/ANAND/ML_Projects/MLFlow_HandsOn/pythonProject/mlruns/0/d0372349037a49c799b6bb8c3f54b6f4/artifacts/model
+user_id: null
+version: 2
