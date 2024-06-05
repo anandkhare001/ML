@@ -1,2 +1,2 @@
 # ML
-ML project created.
+Basis ML projects handson.
