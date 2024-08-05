@@ -7,7 +7,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Loading the trained model
-model = pickle.load(open('RF_Loan_model.pkl', 'rb'))
+model = pickle.load(open('/home/ubuntu/LoanPredictor/RF_Loan_model.pkl', 'rb'))
 
 
 # Views
