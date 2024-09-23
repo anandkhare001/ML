@@ -1,5 +1,5 @@
 # Python version
-FROM python:3.11
+FROM python:3.9
 
 # Set a working directory
 WORKDIR /usr/src/loan-predictor
