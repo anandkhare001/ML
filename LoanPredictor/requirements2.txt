@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-pickle5
-pydantic
-scikitlearn==1.4.1.post1
-numpy
-pandas
-
