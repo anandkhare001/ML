@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
 from prophet.plot import plot_plotly, plot_components_plotly
+import plotly.graph_objects as go
 
 
 # App Title
@@ -10,7 +11,7 @@ st.title('Rainfall Forecast')
 years = st.number_input('Number of years for forecast', min_value=1, max_value=50, value=1)
 
 # Simulate historical rainfall data (for demo purposes)
-with open("model.pkl", "rb") as f:
+with open('model.pkl', "rb") as f:
     model = pickle.load(f)
 
 # create a future dataframe for the next 20 years
