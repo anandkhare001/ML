@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir -r requirements.txt --progress-bar off
 EXPOSE 5000
 
 # Run the app
-CMD ["python", "./streamlit_rainfall_forecast_app.py"]
+CMD ["streamlit", "run", "streamlit_rainfall_forecast_app.py"]
