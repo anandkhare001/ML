@@ -15,7 +15,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: ${{}}
+    runs-on: ${{matrix.os}}
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
