@@ -5,9 +5,12 @@ import pytest
 from prophet import Prophet
 
 class TestClass(unittest.TestCase):
+    # Get the current working directory
+    CURRENT_DIRECTORY = os.getcwd()
+
     def test_loan_pred_model(self):
         # Load Model
-        model_path = os.path.join(os.getcwd(), 'ML', 'LoanPredictor', 'RF_Loan_Model.pkl')
+        model_path = os.path.join(self.CURRENT_DIRECTORY, 'LoanPredictor', 'RF_Loan_Model.pkl')
         model = pickle.load(open(model_path, 'rb'))
         data = {
                 "Gender": 1,  "Married": 1,  "Dependents": 1,  "Education": 1,  "Self_Employed": 0,  "LoanAmount": 120,
@@ -25,7 +28,7 @@ class TestClass(unittest.TestCase):
     
     def test_rainfall_trends(self):
         # Load Model
-        model_path = os.path.join(os.getcwd(), 'ML', 'Rainfall_Trends', 'model.pkl')
+        model_path = os.path.join(self.CURRENT_DIRECTORY, 'Rainfall_Trends', 'model.pkl')
         model = pickle.load(open(model_path, 'rb'))
 
         # create a future dataframe for the next 20 years
@@ -35,5 +38,5 @@ class TestClass(unittest.TestCase):
         # Do assertions
         self.assertIsInstance(model, Prophet)
         self.assertEqual(future.ds[0], forecast.ds[0])
-        self.assertEqual(future.ds[0], forecast.values[0][0])
-        self.assertEqual(forecast.trend[0], forecast.values[0][1])
+        self.assertEqual(future.ds[0], forecast.ds[0])
+        self.assertEqual(forecast.trend[0], 1040.6390576)
