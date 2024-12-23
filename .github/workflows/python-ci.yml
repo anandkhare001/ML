@@ -28,10 +28,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Print CWD
-      run: |
-        import os
-        os.getcwd()
     - name: Test with pytest
       run: |
         pytest
