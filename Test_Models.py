@@ -5,7 +5,7 @@ import pytest
 
 class TestClass(unittest.TestCase):
     def test_loan_pred_model(self):
-        model_path = os.path.join(os.getcwd(), 'LoanPredictor', 'RF_LOan_Model.pkl')
+        model_path = os.path.join(os.getcwd(), 'LoanPredictor', 'RF_Loan_Model.pkl')
         model = pickle.load(open(model_path, 'rb'))
         data = {
                 "Gender": 1,  "Married": 1,  "Dependents": 1,  "Education": 1,  "Self_Employed": 0,  "LoanAmount": 120,
