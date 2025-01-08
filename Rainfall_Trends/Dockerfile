@@ -12,7 +12,7 @@ RUN pip install --upgrade pip --progress-bar off
 RUN pip install --no-cache-dir -r requirements.txt --progress-bar off
 
 # Set port to expose app
-EXPOSE 5000
+EXPOSE 8501
 
 # Run the app
-CMD ["streamlit", "run", "streamlit_rainfall_forecast_app.py"]
+CMD ["streamlit", "run", "streamlit_rainfall_forecast_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
